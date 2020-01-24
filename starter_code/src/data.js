@@ -2967,3 +2967,59 @@ let movies = [
       "rate": 8
     }
   ]
+
+  // Juan Grajales solution:
+
+  // function orderByYear(arr) {
+  //   let ascendingByYear = arr.sort(function(a, b) {
+  //     // first sort by movie year
+  //     if (a.year > b.year)
+  //       return 1;
+  //     else if (a.year < b.year)
+  //       return -1;
+  //     else {
+  //       // if the year is the same then sort by title
+  //       if (a.title > b.title)
+  //         return 1;
+  //       else if (a.title < b.title)
+  //         return -1;
+  //       else
+  //         return 0;
+  //     }
+  //   });
+  //   return ascendingByYear;
+  // }
+
+  function orderByYear(arr){
+    // let yearArr = [...arr];
+    // return yearArr.sort((a,b) => (a.year - b.year);
+    // )
+    // return arr.slice().sort((a, b) => a.year - b.year);
+   return newArr = arr.slice().sort((a, b) => a.year - b.year || a.title.localeCompare(b.title)); 
+   }
+// Iteration 2
+
+   function howManyMovies(arr){
+    let directorArr = arr.filter(eachmovie => {
+      return eachmovie.director == "Steven Spielberg" && eachmovie.genre.includes("Drama")
+    })
+    return directorArr.length
+    }
+    console.log(howManyMovies(movies))
+
+   // NON OPERATIONAL
+  //  var dirMovies = movies.filter(function(howManyMovies) {
+  //    return howManyMovies.director == "Steven Spielberg";
+  //  });
+  // function howmanymovies(arrofmovies){
+      // return arrOfMovies.filter(movie => {
+      //   return movie.genre.includes("drama") && movie.director === "Steven Spielberg";
+      // }).length;
+  // }
+
+  // Iteration 3:
+  function orderAlphabetically(arr){
+      let titleArr = [...arr];
+      let finalArr = [];
+      titleArr.sort
+  }
